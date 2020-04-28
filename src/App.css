@@ -1,38 +1,104 @@
 .App {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.NavBar {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.NavContent {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  flex: 1;
+  align-self: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavContent h1 {
+  font-size: 36px;
+}
+
+.NavContent ul {
+  display: flex;
+  list-style: none;
+}
+
+.NavContent li {
+  padding: 0 2rem;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.NavContent li:last-child {
+  padding-right: 0;
+}
+
+.Content {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 1200px;
+  margin: 0 auto;
+  height: 90vh;
+  display: flex;
+}
+
+.SideBar {
+  width: 300px;
+  padding: 20px;
+  border-right: 1px solid black;
+}
+
+.List ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.List li {
+  font-size: 24px;
+  padding: 0.5rem 0;
+}
+
+.Tags {
+  margin-top: 3rem;
+}
+
+.Tags ul {
+  list-style: none;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Tags li {
+  padding: 1rem 2rem;
+  margin: 1rem 1rem 1rem 0rem;
+  font-size: 24px;
+  background-color: black;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MainContent {
+  width: 900px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TextItem p {
+  padding: 1rem 0;
+  line-height: 30px;
+  font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.TextItem a {
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  margin: 1rem 0 2rem 0;
+  border-top: 1px solid #000;
 }
